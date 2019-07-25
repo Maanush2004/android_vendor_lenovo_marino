@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<WHITELIST>
+    <PerfService>
+        <Package name="com.imangi.templerun2">
+        	<Activity name="Common">            
+            	<CMD_SET_CLUSTER_CPU_CORE_MIN Param1="0" Param2="3"/>
+            </Activity>
+        </Package>
+        <Package name="com.andromeda.androbench2">
+            <Activity name="Common">
+                <CMD_SET_SPORTS_MODE Param1="1"/>
+            </Activity>
+        </Package>
+        <Package name="com.futuremark.pcmark.android.benchmark">
+            <Activity name="Common">
+                <CMD_SET_SPORTS_MODE Param1="1"/>
+            </Activity>
+        </Package>
+        <Package name="com.antutu.ABenchMark">
+            <Activity name="Common">
+                <CMD_SET_SPORTS_MODE Param1="1"/>
+            </Activity>
+        </Package>
+        <Package name="com.primatelabs.geekbench">
+            <Activity name="Common">
+                <CMD_SET_SPORTS_MODE Param1="1"/>
+            </Activity>
+        </Package>
+        <Package name="com.aurorasoftworks.quadrant.ui.professional">
+            <Activity name="Common">
+                <CMD_SET_SPORTS_MODE Param1="1"/>
+            </Activity>
+        </Package>
+        <Package name="com.aurorasoftworks.quadrant.ui.advanced">
+            <Activity name="Common">
+                <CMD_SET_SPORTS_MODE Param1="1"/>
+            </Activity>
+        </Package>
+        <Package name="com.tencent.tmgp.sgame">
+            <Activity name="Common">
+                <CMD_SET_CLUSTER_CPU_CORE_MIN Param1="0" Param2="4"/>
+                <CMD_SET_CLUSTER_CPU_CORE_MIN Param1="1" Param2="2"/>
+                <CMD_SET_CLUSTER_CPU_CORE_MAX Param1="1" Param2="2"/>
+          </Activity>
+        </Package>
+        <Package name="com.android.server.cts.device.graphicsstats">
+        	<Activity name="Common">
+            	<CMD_SET_CLUSTER_CPU_CORE_MIN Param1="1" Param2="4"/>
+            </Activity>
+        </Package>
+    </PerfService>
+</WHITELIST>

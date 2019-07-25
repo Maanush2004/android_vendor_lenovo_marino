@@ -1,0 +1,4 @@
+service mmi-carrier-sh /vendor/bin/init.mmi.carrier.sh
+    class core
+    user root
+    oneshot
