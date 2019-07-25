@@ -21,7 +21,6 @@ service ril-daemon-mtk /vendor/bin/mtkrild
     user root
     group radio cache inet misc audio sdcard_r sdcard_rw log system
     disabled
-    oneshot
 
 on property:ril.mtk=1
     start ril-daemon-mtk
