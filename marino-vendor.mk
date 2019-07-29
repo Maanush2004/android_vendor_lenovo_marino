@@ -61,10 +61,10 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/marino/proprietary/etc/mtklog-config.prop:system/etc/mtklog-config.prop \
     vendor/lenovo/marino/proprietary/etc/rtt-conf.xml:system/etc/rtt-conf.xml \
     vendor/lenovo/marino/proprietary/etc/spn-conf.xml:system/etc/spn-conf.xml \
-    vendor/lenovo/marino/proprietary/files.txt:system/files.txt \
     vendor/lenovo/marino/proprietary/lib/com.motorola.hardware.display.panel@1.0.so:system/lib/com.motorola.hardware.display.panel@1.0.so \
     vendor/lenovo/marino/proprietary/lib/drm/libdrmmtkplugin.so:system/lib/drm/libdrmmtkplugin.so \
     vendor/lenovo/marino/proprietary/lib/libaal.so:system/lib/libaal.so \
+    vendor/lenovo/marino/proprietary/lib/libadvcamservice.so:system/lib/libadvcamservice.so \
     vendor/lenovo/marino/proprietary/lib/libaed.so:system/lib/libaed.so \
     vendor/lenovo/marino/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so \
     vendor/lenovo/marino/proprietary/lib/libaudio_param_parser-sys.so:system/lib/libaudio_param_parser-sys.so \
@@ -98,6 +98,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/marino/proprietary/lib/libjni_pq.so:system/lib/libjni_pq.so \
     vendor/lenovo/marino/proprietary/lib/libmediatek_exceptionlog.so:system/lib/libmediatek_exceptionlog.so \
     vendor/lenovo/marino/proprietary/lib/libminiui.so:system/lib/libminiui.so \
+    vendor/lenovo/marino/proprietary/lib/libmmsdkservice.so:system/lib/libmmsdkservice.so \
     vendor/lenovo/marino/proprietary/lib/libmotocare.so:system/lib/libmotocare.so \
     vendor/lenovo/marino/proprietary/lib/libmpbase.so:system/lib/libmpbase.so \
     vendor/lenovo/marino/proprietary/lib/libmrdump.so:system/lib/libmrdump.so \
@@ -503,9 +504,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/marino/proprietary/vendor/lib/hw/android.hardware.light@2.0-impl-mediatek.so:system/vendor/lib/hw/android.hardware.light@2.0-impl-mediatek.so \
     vendor/lenovo/marino/proprietary/vendor/lib/hw/android.hardware.sensors@1.0-impl-mediatek.so:system/vendor/lib/hw/android.hardware.sensors@1.0-impl-mediatek.so \
     vendor/lenovo/marino/proprietary/vendor/lib/hw/audio.primary.mt6757.so:system/vendor/lib/hw/audio.primary.mt6757.so \
-    vendor/lenovo/marino/proprietary/vendor/lib/hw/audio.r_submix.default.so:system/vendor/lib/hw/audio.r_submix.default.so \
     vendor/lenovo/marino/proprietary/vendor/lib/hw/audio.usb.mt6757.so:system/vendor/lib/hw/audio.usb.mt6757.so \
-    vendor/lenovo/marino/proprietary/vendor/lib/hw/audio_policy.stub.so:system/vendor/lib/hw/audio_policy.stub.so \
     vendor/lenovo/marino/proprietary/vendor/lib/hw/com.motorola.hardware.display.panel@1.0-impl.so:system/vendor/lib/hw/com.motorola.hardware.display.panel@1.0-impl.so \
     vendor/lenovo/marino/proprietary/vendor/lib/hw/displaypanel.default.so:system/vendor/lib/hw/displaypanel.default.so \
     vendor/lenovo/marino/proprietary/vendor/lib/hw/flp.mt6757.so:system/vendor/lib/hw/flp.mt6757.so \
@@ -534,7 +533,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/marino/proprietary/vendor/lib/hw/vendor.mediatek.hardware.power@1.1-impl.so:system/vendor/lib/hw/vendor.mediatek.hardware.power@1.1-impl.so \
     vendor/lenovo/marino/proprietary/vendor/lib/hw/vendor.mediatek.hardware.pq@2.0-impl.so:system/vendor/lib/hw/vendor.mediatek.hardware.pq@2.0-impl.so \
     vendor/lenovo/marino/proprietary/vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so:system/vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so \
-    vendor/lenovo/marino/proprietary/vendor/lib/hw/vibrator.default.so:system/vendor/lib/hw/vibrator.default.so \
     vendor/lenovo/marino/proprietary/vendor/lib/lib3a.ae.core.so:system/vendor/lib/lib3a.ae.core.so \
     vendor/lenovo/marino/proprietary/vendor/lib/lib3a.ae.so:system/vendor/lib/lib3a.ae.so \
     vendor/lenovo/marino/proprietary/vendor/lib/lib3a.af.core.so:system/vendor/lib/lib3a.af.core.so \
@@ -579,7 +577,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/marino/proprietary/vendor/lib/lib_speech_enh.so:system/vendor/lib/lib_speech_enh.so \
     vendor/lenovo/marino/proprietary/vendor/lib/libabfadp.so:system/vendor/lib/libabfadp.so \
     vendor/lenovo/marino/proprietary/vendor/lib/libacdk.so:system/vendor/lib/libacdk.so \
-    vendor/lenovo/marino/proprietary/vendor/lib/libalsautils.so:system/vendor/lib/libalsautils.so \
     vendor/lenovo/marino/proprietary/vendor/lib/libaudio_param_parser-vnd.so:system/vendor/lib/libaudio_param_parser-vnd.so \
     vendor/lenovo/marino/proprietary/vendor/lib/libaudiocompensationfilter.so:system/vendor/lib/libaudiocompensationfilter.so \
     vendor/lenovo/marino/proprietary/vendor/lib/libaudiocompensationfilterc.so:system/vendor/lib/libaudiocompensationfilterc.so \
@@ -661,7 +658,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/marino/proprietary/vendor/lib/libdngop.so:system/vendor/lib/libdngop.so \
     vendor/lenovo/marino/proprietary/vendor/lib/libdpframework.so:system/vendor/lib/libdpframework.so \
     vendor/lenovo/marino/proprietary/vendor/lib/libeffecthal.base.so:system/vendor/lib/libeffecthal.base.so \
-    vendor/lenovo/marino/proprietary/vendor/lib/libeffects.so:system/vendor/lib/libeffects.so \
     vendor/lenovo/marino/proprietary/vendor/lib/libfeature.face.so:system/vendor/lib/libfeature.face.so \
     vendor/lenovo/marino/proprietary/vendor/lib/libfeature.vsdof.hal.so:system/vendor/lib/libfeature.vsdof.hal.so \
     vendor/lenovo/marino/proprietary/vendor/lib/libfeature_3dnr.so:system/vendor/lib/libfeature_3dnr.so \
@@ -682,7 +678,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/marino/proprietary/vendor/lib/libh264enc_sb.ca7.so:system/vendor/lib/libh264enc_sb.ca7.so \
     vendor/lenovo/marino/proprietary/vendor/lib/libhdrproc.so:system/vendor/lib/libhdrproc.so \
     vendor/lenovo/marino/proprietary/vendor/lib/libhevce_sb.ca7.android.so:system/vendor/lib/libhevce_sb.ca7.android.so \
-    vendor/lenovo/marino/proprietary/vendor/lib/libhwc2on1adapter.so:system/vendor/lib/libhwc2on1adapter.so \
     vendor/lenovo/marino/proprietary/vendor/lib/libhwm.so:system/vendor/lib/libhwm.so \
     vendor/lenovo/marino/proprietary/vendor/lib/libhydra.so:system/vendor/lib/libhydra.so \
     vendor/lenovo/marino/proprietary/vendor/lib/libifcutils_mtk.so:system/vendor/lib/libifcutils_mtk.so \
@@ -780,8 +775,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/marino/proprietary/vendor/lib/libsysenv.so:system/vendor/lib/libsysenv.so \
     vendor/lenovo/marino/proprietary/vendor/lib/libthermalalgo.so:system/vendor/lib/libthermalalgo.so \
     vendor/lenovo/marino/proprietary/vendor/lib/libthha.so:system/vendor/lib/libthha.so \
-    vendor/lenovo/marino/proprietary/vendor/lib/libtinycompress.so:system/vendor/lib/libtinycompress.so \
-    vendor/lenovo/marino/proprietary/vendor/lib/libtinyxml.so:system/vendor/lib/libtinyxml.so \
     vendor/lenovo/marino/proprietary/vendor/lib/libudf.so:system/vendor/lib/libudf.so \
     vendor/lenovo/marino/proprietary/vendor/lib/libui_ext.so:system/vendor/lib/libui_ext.so \
     vendor/lenovo/marino/proprietary/vendor/lib/libvc1dec_sa.ca7.so:system/vendor/lib/libvc1dec_sa.ca7.so \
@@ -797,7 +790,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/marino/proprietary/vendor/lib/libvp9dec_sa.ca7.so:system/vendor/lib/libvp9dec_sa.ca7.so \
     vendor/lenovo/marino/proprietary/vendor/lib/libvt_custom.so:system/vendor/lib/libvt_custom.so \
     vendor/lenovo/marino/proprietary/vendor/lib/libwo.so:system/vendor/lib/libwo.so \
-    vendor/lenovo/marino/proprietary/vendor/lib/libwpa_client.so:system/vendor/lib/libwpa_client.so \
     vendor/lenovo/marino/proprietary/vendor/lib/libwvhidl.so:system/vendor/lib/libwvhidl.so \
     vendor/lenovo/marino/proprietary/vendor/lib/mediadrm/libmockdrmcryptoplugin.so:system/vendor/lib/mediadrm/libmockdrmcryptoplugin.so \
     vendor/lenovo/marino/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
@@ -830,7 +822,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/marino/proprietary/vendor/lib64/hw/android.hardware.sensors@1.0-impl-mediatek.so:system/vendor/lib64/hw/android.hardware.sensors@1.0-impl-mediatek.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/hw/audio.primary.mt6757.so:system/vendor/lib64/hw/audio.primary.mt6757.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/hw/audio.usb.mt6757.so:system/vendor/lib64/hw/audio.usb.mt6757.so \
-    vendor/lenovo/marino/proprietary/vendor/lib64/hw/audio_policy.stub.so:system/vendor/lib64/hw/audio_policy.stub.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/hw/com.motorola.hardware.display.panel@1.0-impl.so:system/vendor/lib64/hw/com.motorola.hardware.display.panel@1.0-impl.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/hw/displaypanel.default.so:system/vendor/lib64/hw/displaypanel.default.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/hw/flp.mt6757.so:system/vendor/lib64/hw/flp.mt6757.so \
@@ -858,7 +849,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/marino/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.power@1.1-impl.so:system/vendor/lib64/hw/vendor.mediatek.hardware.power@1.1-impl.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.pq@2.0-impl.so:system/vendor/lib64/hw/vendor.mediatek.hardware.pq@2.0-impl.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so:system/vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so \
-    vendor/lenovo/marino/proprietary/vendor/lib64/hw/vibrator.default.so:system/vendor/lib64/hw/vibrator.default.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/lib3a.ae.core.so:system/vendor/lib64/lib3a.ae.core.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/lib3a.ae.so:system/vendor/lib64/lib3a.ae.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/lib3a.af.core.so:system/vendor/lib64/lib3a.af.core.so \
@@ -890,7 +880,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/marino/proprietary/vendor/lib64/libabfadp.so:system/vendor/lib64/libabfadp.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libacdk.so:system/vendor/lib64/libacdk.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libadropbox.so:system/vendor/lib64/libadropbox.so \
-    vendor/lenovo/marino/proprietary/vendor/lib64/libalsautils.so:system/vendor/lib64/libalsautils.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libaudio_param_parser-vnd.so:system/vendor/lib64/libaudio_param_parser-vnd.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libaudiocompensationfilter.so:system/vendor/lib64/libaudiocompensationfilter.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libaudiocompensationfilterc.so:system/vendor/lib64/libaudiocompensationfilterc.so \
@@ -975,7 +964,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/marino/proprietary/vendor/lib64/libdngop.so:system/vendor/lib64/libdngop.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libdpframework.so:system/vendor/lib64/libdpframework.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libeffecthal.base.so:system/vendor/lib64/libeffecthal.base.so \
-    vendor/lenovo/marino/proprietary/vendor/lib64/libeffects.so:system/vendor/lib64/libeffects.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libfeature.face.so:system/vendor/lib64/libfeature.face.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libfeature.vsdof.hal.so:system/vendor/lib64/libfeature.vsdof.hal.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libfeature_3dnr.so:system/vendor/lib64/libfeature_3dnr.so \
@@ -988,7 +976,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/marino/proprietary/vendor/lib64/libgralloc_extra.so:system/vendor/lib64/libgralloc_extra.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libhdrproc.so:system/vendor/lib64/libhdrproc.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libhevce_sb.ca7.android.so:system/vendor/lib64/libhevce_sb.ca7.android.so \
-    vendor/lenovo/marino/proprietary/vendor/lib64/libhwc2on1adapter.so:system/vendor/lib64/libhwc2on1adapter.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libhwm.so:system/vendor/lib64/libhwm.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libhydra.so:system/vendor/lib64/libhydra.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libifcutils_mtk.so:system/vendor/lib64/libifcutils_mtk.so \
@@ -999,8 +986,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/marino/proprietary/vendor/lib64/libion_mtk.so:system/vendor/lib64/libion_mtk.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libion_ulit.so:system/vendor/lib64/libion_ulit.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libipsec_ims_shr.so:system/vendor/lib64/libipsec_ims_shr.so \
-    vendor/lenovo/marino/proprietary/vendor/lib64/libkeystore-engine-wifi-hidl.so:system/vendor/lib64/libkeystore-engine-wifi-hidl.so \
-    vendor/lenovo/marino/proprietary/vendor/lib64/libkeystore-wifi-hidl.so:system/vendor/lib64/libkeystore-wifi-hidl.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libm4u.so:system/vendor/lib64/libm4u.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libmal.so:system/vendor/lib64/libmal.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libmal_datamngr.so:system/vendor/lib64/libmal_datamngr.so \
@@ -1080,8 +1065,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/marino/proprietary/vendor/lib64/libstrongswan.so:system/vendor/lib64/libstrongswan.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libsysenv.so:system/vendor/lib64/libsysenv.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libthha.so:system/vendor/lib64/libthha.so \
-    vendor/lenovo/marino/proprietary/vendor/lib64/libtinycompress.so:system/vendor/lib64/libtinycompress.so \
-    vendor/lenovo/marino/proprietary/vendor/lib64/libtinyxml.so:system/vendor/lib64/libtinyxml.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libudf.so:system/vendor/lib64/libudf.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libui_ext.so:system/vendor/lib64/libui_ext.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libvcodec_cap.so:system/vendor/lib64/libvcodec_cap.so \
@@ -1089,10 +1072,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/marino/proprietary/vendor/lib64/libvcodec_utility.so:system/vendor/lib64/libvcodec_utility.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libvcodecdrv.so:system/vendor/lib64/libvcodecdrv.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libverno.so:system/vendor/lib64/libverno.so \
-    vendor/lenovo/marino/proprietary/vendor/lib64/libwifi-hal.so:system/vendor/lib64/libwifi-hal.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libwifitest.so:system/vendor/lib64/libwifitest.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libwo.so:system/vendor/lib64/libwo.so \
-    vendor/lenovo/marino/proprietary/vendor/lib64/libwpa_client.so:system/vendor/lib64/libwpa_client.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/libwvhidl.so:system/vendor/lib64/libwvhidl.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/mediadrm/libmockdrmcryptoplugin.so:system/vendor/lib64/mediadrm/libmockdrmcryptoplugin.so \
     vendor/lenovo/marino/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:system/vendor/lib64/mediadrm/libwvdrmengine.so \
